@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 id="Game">STOPWATCH</h1>
+      <div class="controls">
+        <p class="time"><span id="seconds">00</span>:<span id="minutes">00</span></p>
+        <button id="btn-start" class="btn" onclick="Start()">Start</button>
+        <button id="btn-lap" class="btn" onclick="Lap()">Lap</button>
+        <button id="btn-reset" class="btn" onclick="Reset()">Reset</button>
+      </div>
+      <div class="table">
+        <table id="table">
+          <tr>
+            <th>Lap</th>
+            <th>Time</th>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <p id="declare">If you get 00 you will win!</p>
+    <script src="index.js"></script>
+  </body>
+</html>
